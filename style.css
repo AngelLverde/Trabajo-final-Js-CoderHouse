@@ -4,24 +4,28 @@
 }
 body {
     background-color: rgb(202, 200, 200);
+    justify-content: space-between;
 }
 .navbar .container-fluid{
     display: flex;
-    justify-content: center;
+    
 }
 #seccion-productos {  
  display: flex;
+ justify-content: space-between;
  
    
     
 }
 .navbar-brand{
     font-size: 3.25rem;
-    font-family:Verdana, Geneva, Tahoma, sans-serif
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    justify-content: space-between;
 }
 
 .container{
-    margin-top: 10rem;
+    margin-top: 5px;
+    padding: 0;
 }
 
 h1{
@@ -29,14 +33,15 @@ h1{
     justify-content: center;
 }
 
-#enlace{
-    display: flex;
-    justify-content: center;
+.encabezado {
+    padding: 25px;
 }
+
 
 .centrado{
     display: flex;
     justify-content: space-around;
+    width: 55;
     
 }
 
@@ -48,7 +53,7 @@ h1{
 
 .card-text{
     display: flex;
-    justify-content: center;
+    justify-content:space-between;
 }
 
 .precio{
@@ -60,7 +65,7 @@ h1{
 .row{
     display: flex;
     justify-content: center;
-    column-gap: 50px;
+    column-gap: 80px;
 }
 
 .button-container{
@@ -85,6 +90,7 @@ h1{
 a{
     text-decoration: none;
     color: rgb(107, 16, 16);
+    font-size: 25px;
 }
 
 
@@ -108,5 +114,28 @@ footer{
 }
 
 
+.btn-agregar-carrito{
+    background-color: brown;
 
+}
+.seccion-productos{
+    display: flex;
+    margin-left: 2px;
+    
+}
+.container-cart{
+padding: 25px;
+}
 
+.navbar-brand{
+    font-size: 35px;
+}
+.container-productos{
+    width: 100%;
+
+    padding: 2px;
+}
+#menu {
+    font-size: 20px;
+    justify-content: space-around;
+}

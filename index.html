@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="assets/descarga.png" type="image/x-icon">
     <title>Cartagena Showrom
     </title>
    
@@ -13,29 +14,25 @@
       integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
       crossorigin="anonymous"
     />
-    
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-grey">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Cartagena Showrom</a>
+        <a class="navbar-brand"  href="index.html">Cartagena Showrom</a>
         <button class="navbar-toggler"  type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="menu">
             <li class="nav-item">
               <a class="nav-link active filtrar-categoria" href="#" data-categoria="Zapatillas" aria-current="page" >Zapatillas</a>
             </li>
             <li class="nav-item">
               <a class="nav-link filtrar-categoria" href="#" data-categoria="Remeras" >Remeras</a>
             </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Ojotas
-              </a>
-            
+            <li class="nav-item">
+              <a class="nav-link filtrar-categoria" href="#" data-categoria="Buzos" >Buzos</a>
             </li>
             <li class="nav-item">
               <a class="nav-link ">Otros</a>
@@ -47,10 +44,10 @@
     </nav>
 <br>
     <div class="encabezado">
-      <h1 id="titulo">Tienda de Productos</h1>
+      <h1 id="titulo">Almacen de pilchas</h1>
     </div>
 
-    <div class="container" style="min-height: 100vh;">
+    <div class="container-productos">
       <div id="seccion-productos">
      
        
@@ -58,7 +55,7 @@
       </div>
     </div>
     <!-- CARRITO DE COMPRAS -->
-      <div class="container">
+      <div class="container-cart">
         <div class="centrado-cart">
           <a
             class="btn-cart"
@@ -66,32 +63,31 @@
             href="#collapseExample"
             role="button"
           >
-            <img src="./assets/diagram-61_24456.png" alt="" class="img-cart" />
+            <img src="./assets/carrito.png" alt="" class="img-cart" />
           </a>
         </div>
 
         <div class="collapse" id="collapseExample">
-          <div id="carrito" 0>
+          <div id="carrito">
             <table class="table" >
               <thead id="acumulado">
-                <tr>
-                  
+                <tr> 
                   <th>Producto </th>
                   <th>Precio</th>
                   <th>Cantidad</th>
-                  <th>Quitar id</th>
+                  <th>Quitar</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <th id= "cart-total" scope="row">0</th>
+                  <th id= "cart-total" scope="row"></th>
                 </tr>
               </tbody>
             </table>
             <div class="centrado">
               <button
-                type="button"
-                class="btn btn-outline-danger" onclick="eliminarDelCarrito()"
+                type="button" onclick="eliminarDelCarrito()"
+                class="btn btn-outline-danger" 
                 id="vaciar-carrito" 
               >
                 Vaciar Carrito
@@ -101,9 +97,6 @@
                 class="btn btn-outline-success" onclick="confirmarLaCompra()"
                 id="confirmar-compra"
               >
-
-            
-
                 Confirmar Compra
               </button>
             </div>
